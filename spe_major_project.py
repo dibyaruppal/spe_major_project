@@ -75,8 +75,6 @@ print(num_classes_test)
 
 
 
-import matplotlib.pyplot as plt
-
 plt.figure(figsize=(10, 10))
 for images, labels in train_ds.take(1):
     for i in range(9):
