@@ -1,6 +1,6 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-from model.inference import predictClass
+from inference import predictClass
 from PIL import Image
 import logging
 

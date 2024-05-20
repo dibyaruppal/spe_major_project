@@ -55,3 +55,75 @@
 2024-05-20 15:39:28,004 - INFO - Processing uploaded image
 2024-05-20 15:39:28,175 - INFO - Prediction successful
 2024-05-20 15:39:28,180 - INFO - 127.0.0.1 - - [20/May/2024 15:39:28] "POST /predict HTTP/1.1" 200 -
+2024-05-20 18:45:11,472 - INFO - Prediction request received
+2024-05-20 18:45:11,472 - ERROR - No file part
+2024-05-20 18:45:11,473 - INFO - Prediction request received
+2024-05-20 18:45:11,474 - ERROR - No selected file
+2024-05-20 18:45:11,478 - INFO - Prediction request received
+2024-05-20 18:45:11,479 - INFO - Processing uploaded image
+2024-05-20 18:45:11,506 - INFO - Prediction successful
+2024-05-20 18:47:07,825 - INFO - Prediction request received
+2024-05-20 18:47:07,826 - ERROR - Allowed image types are: png, jpg, jpeg
+2024-05-20 18:47:07,827 - INFO - Prediction request received
+2024-05-20 18:47:07,827 - ERROR - No file part
+2024-05-20 18:47:07,828 - INFO - Prediction request received
+2024-05-20 18:47:07,829 - ERROR - No selected file
+2024-05-20 18:47:07,830 - INFO - Prediction request received
+2024-05-20 18:47:07,831 - INFO - Processing uploaded image
+2024-05-20 18:47:07,864 - INFO - Prediction successful
+2024-05-20 18:47:25,310 - INFO - Prediction request received
+2024-05-20 18:47:25,311 - ERROR - Allowed image types are: png, jpg, jpeg
+2024-05-20 18:47:25,313 - INFO - Prediction request received
+2024-05-20 18:47:25,313 - ERROR - No file part
+2024-05-20 18:47:25,314 - INFO - Prediction request received
+2024-05-20 18:47:25,315 - ERROR - No selected file
+2024-05-20 18:47:25,316 - INFO - Prediction request received
+2024-05-20 18:47:25,317 - INFO - Processing uploaded image
+2024-05-20 18:47:25,350 - INFO - Prediction successful
+2024-05-20 18:48:06,720 - INFO - Prediction request received
+2024-05-20 18:48:06,721 - ERROR - Allowed image types are: png, jpg, jpeg
+2024-05-20 18:48:06,722 - INFO - Prediction request received
+2024-05-20 18:48:06,722 - ERROR - No file part
+2024-05-20 18:48:06,723 - INFO - Prediction request received
+2024-05-20 18:48:06,723 - ERROR - No selected file
+2024-05-20 18:48:06,724 - INFO - Prediction request received
+2024-05-20 18:48:06,725 - INFO - Processing uploaded image
+2024-05-20 18:48:06,757 - INFO - Prediction successful
+2024-05-20 18:48:42,726 - INFO - Prediction request received
+2024-05-20 18:48:42,726 - ERROR - No file part
+2024-05-20 18:48:42,727 - INFO - Prediction request received
+2024-05-20 18:48:42,728 - ERROR - No selected file
+2024-05-20 18:48:42,732 - INFO - Prediction request received
+2024-05-20 18:48:42,734 - INFO - Processing uploaded image
+2024-05-20 18:48:42,763 - INFO - Prediction successful
+2024-05-20 18:49:04,789 - INFO - Prediction request received
+2024-05-20 18:49:04,790 - INFO - Processing uploaded image
+2024-05-20 18:49:04,819 - INFO - Prediction successful
+2024-05-20 18:49:04,821 - INFO - Prediction request received
+2024-05-20 18:49:04,821 - ERROR - No file part
+2024-05-20 18:49:04,822 - INFO - Prediction request received
+2024-05-20 18:49:04,823 - ERROR - No selected file
+2024-05-20 18:49:04,823 - INFO - Prediction request received
+2024-05-20 18:49:04,825 - INFO - Processing uploaded image
+2024-05-20 18:49:04,851 - INFO - Prediction successful
+2024-05-20 18:50:16,462 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-20 18:50:16,462 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-20 18:50:22,094 - INFO - Prediction request received
+2024-05-20 18:50:22,095 - ERROR - Allowed image types are: png, jpg, jpeg
+2024-05-20 18:50:22,096 - INFO - Prediction request received
+2024-05-20 18:50:22,096 - ERROR - No file part
+2024-05-20 18:50:22,097 - INFO - Prediction request received
+2024-05-20 18:50:22,099 - ERROR - No selected file
+2024-05-20 18:50:22,100 - INFO - Prediction request received
+2024-05-20 18:50:22,101 - INFO - Processing uploaded image
+2024-05-20 18:50:22,133 - INFO - Prediction successful
+2024-05-20 18:50:42,452 - INFO - Prediction request received
+2024-05-20 18:50:42,453 - ERROR - Allowed image types are: png, jpg, jpeg
+2024-05-20 18:50:42,454 - INFO - Prediction request received
+2024-05-20 18:50:42,454 - ERROR - No file part
+2024-05-20 18:50:42,455 - INFO - Prediction request received
+2024-05-20 18:50:42,456 - ERROR - No selected file
+2024-05-20 18:50:42,458 - INFO - Prediction request received
+2024-05-20 18:50:42,459 - INFO - Processing uploaded image
+2024-05-20 18:50:42,490 - INFO - Prediction successful
