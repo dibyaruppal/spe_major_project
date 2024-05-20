@@ -1,0 +1,57 @@
+2024-05-20 10:47:41,366 - INFO - Prediction request received
+2024-05-20 10:47:41,367 - INFO - Processing uploaded image
+2024-05-20 10:47:41,386 - INFO - Prediction successful
+2024-05-20 10:47:41,387 - INFO - 127.0.0.1 - - [20/May/2024 10:47:41] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:34:19,204 - INFO - Prediction request received
+2024-05-20 15:34:19,206 - INFO - Processing uploaded image
+2024-05-20 15:34:19,222 - INFO - Prediction successful
+2024-05-20 15:34:19,223 - INFO - 127.0.0.1 - - [20/May/2024 15:34:19] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:34:37,102 - INFO - Prediction request received
+2024-05-20 15:34:37,103 - ERROR - No selected file
+2024-05-20 15:34:37,103 - INFO - 127.0.0.1 - - [20/May/2024 15:34:37] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2024-05-20 15:34:46,756 - INFO - Prediction request received
+2024-05-20 15:34:46,757 - ERROR - No file part
+2024-05-20 15:34:46,757 - INFO - 127.0.0.1 - - [20/May/2024 15:34:46] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2024-05-20 15:35:05,331 - INFO - Prediction request received
+2024-05-20 15:35:05,332 - INFO - Processing uploaded image
+2024-05-20 15:35:05,342 - INFO - Prediction successful
+2024-05-20 15:35:05,343 - INFO - 127.0.0.1 - - [20/May/2024 15:35:05] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:35:17,459 - INFO - Prediction request received
+2024-05-20 15:35:17,460 - INFO - Processing uploaded image
+2024-05-20 15:35:17,473 - INFO - Prediction successful
+2024-05-20 15:35:17,473 - INFO - 127.0.0.1 - - [20/May/2024 15:35:17] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:35:27,014 - INFO - Prediction request received
+2024-05-20 15:35:27,016 - INFO - Processing uploaded image
+2024-05-20 15:35:27,036 - INFO - Prediction successful
+2024-05-20 15:35:27,036 - INFO - 127.0.0.1 - - [20/May/2024 15:35:27] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:35:48,086 - INFO - Prediction request received
+2024-05-20 15:35:48,087 - INFO - Processing uploaded image
+2024-05-20 15:35:48,099 - INFO - Prediction successful
+2024-05-20 15:35:48,099 - INFO - 127.0.0.1 - - [20/May/2024 15:35:48] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:36:06,942 - INFO - Prediction request received
+2024-05-20 15:36:06,943 - INFO - Processing uploaded image
+2024-05-20 15:36:06,955 - INFO - Prediction successful
+2024-05-20 15:36:06,956 - INFO - 127.0.0.1 - - [20/May/2024 15:36:06] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:38:51,883 - INFO - Prediction request received
+2024-05-20 15:38:51,884 - ERROR - No selected file
+2024-05-20 15:38:51,884 - INFO - 127.0.0.1 - - [20/May/2024 15:38:51] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2024-05-20 15:38:58,403 - INFO - Prediction request received
+2024-05-20 15:38:58,404 - INFO - Processing uploaded image
+2024-05-20 15:38:58,416 - INFO - Prediction successful
+2024-05-20 15:38:58,416 - INFO - 127.0.0.1 - - [20/May/2024 15:38:58] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:39:05,912 - INFO - Prediction request received
+2024-05-20 15:39:05,913 - INFO - Processing uploaded image
+2024-05-20 15:39:05,927 - INFO - Prediction successful
+2024-05-20 15:39:05,927 - INFO - 127.0.0.1 - - [20/May/2024 15:39:05] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:39:26,212 - INFO - Prediction request received
+2024-05-20 15:39:26,219 - INFO - Processing uploaded image
+2024-05-20 15:39:26,401 - INFO - Prediction successful
+2024-05-20 15:39:26,406 - INFO - 127.0.0.1 - - [20/May/2024 15:39:26] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:39:27,194 - INFO - Prediction request received
+2024-05-20 15:39:27,198 - INFO - Processing uploaded image
+2024-05-20 15:39:27,380 - INFO - Prediction successful
+2024-05-20 15:39:27,386 - INFO - 127.0.0.1 - - [20/May/2024 15:39:27] "POST /predict HTTP/1.1" 200 -
+2024-05-20 15:39:28,001 - INFO - Prediction request received
+2024-05-20 15:39:28,004 - INFO - Processing uploaded image
+2024-05-20 15:39:28,175 - INFO - Prediction successful
+2024-05-20 15:39:28,180 - INFO - 127.0.0.1 - - [20/May/2024 15:39:28] "POST /predict HTTP/1.1" 200 -
