@@ -1,7 +1,7 @@
 import unittest
 from flask_testing import TestCase
 from flask import url_for
-from backend.app import app  # assuming your Flask app is defined in app.py
+from app import app  # assuming your Flask app is defined in app.py
 import io
 
 class MyTest(TestCase):
