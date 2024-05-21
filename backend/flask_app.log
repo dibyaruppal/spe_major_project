@@ -1,7 +1,0 @@
-2024-05-20 19:19:11,806 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2024-05-20 19:19:11,806 - INFO - [33mPress CTRL+C to quit[0m
-2024-05-20 19:19:19,106 - INFO - Prediction request received
-2024-05-20 19:19:19,109 - INFO - Processing uploaded image
-2024-05-20 19:19:19,351 - INFO - Prediction successful
-2024-05-20 19:19:19,357 - INFO - 127.0.0.1 - - [20/May/2024 19:19:19] "POST /predict HTTP/1.1" 200 -

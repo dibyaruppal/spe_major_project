@@ -51,4 +51,4 @@ def predict():
         return jsonify({'error': 'Allowed image types are: png, jpg, jpeg'}), 400
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True, host='0.0.0.0')
