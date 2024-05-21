@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: train-job-template
+spec:
+  template:
+    spec:
+      containers:
+      - name: train
+        image: rahulb2180/spe_major_project_model  
+        command: ["python", "train.py"]
+        volumeMounts:
+        - mountPath: "/mnt/data"
+          name: model-storage
+      restartPolicy: Never
+      volumes:
+      - name: model-storage
+        hostPath:
+          path: "/mnt/data"
+          type: Directory

@@ -13,8 +13,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # Define your directories and parameters
-train_dir = "../ai_images_vs_real_image/train"
-test_dir = "../ai_images_vs_real_image/test"
+train_dir = "/mnt/data/ai_images_vs_real_image/train"
+test_dir = "/mnt/data/ai_images_vs_real_image/test"
 batch_size = 64
 image_height = 224
 image_width = 224
@@ -110,7 +110,7 @@ for epoch in range(num_epochs):
     if val_accuracy > best_accuracy:
         print("Weights of ",epoch+1," are saved")
         best_accuracy = val_accuracy
-        torch.save(model.state_dict(), '../best_model.pth')
+        torch.save(model.state_dict(), '/mnt/data/best_model.pth')
 
 
     train_loss_list.append(avg_train_loss)

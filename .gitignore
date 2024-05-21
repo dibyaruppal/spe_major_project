@@ -3,3 +3,4 @@ node_modules
 ai_images_vs_real_image/
 __pycache__/
 model/__pycache__/
+frontend/node_modules/

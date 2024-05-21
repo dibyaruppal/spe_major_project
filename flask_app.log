@@ -1,0 +1,79 @@
+2024-05-21 10:38:31,895 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.244.0.63:5000
+2024-05-21 10:38:31,895 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-21 10:38:31,896 - INFO -  * Restarting with stat
+2024-05-21 10:38:34,162 - WARNING -  * Debugger is active!
+2024-05-21 10:38:34,162 - INFO -  * Debugger PIN: 129-989-259
+2024-05-21 10:38:39,845 - INFO - Prediction request received
+2024-05-21 10:38:39,848 - INFO - Processing uploaded image
+2024-05-21 10:38:39,872 - INFO - Prediction successful
+2024-05-21 10:38:39,873 - INFO - 10.244.0.1 - - [21/May/2024 10:38:39] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:39:54,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.244.0.78:5000
+2024-05-21 12:39:54,018 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-21 12:39:54,019 - INFO -  * Restarting with stat
+2024-05-21 12:39:56,834 - WARNING -  * Debugger is active!
+2024-05-21 12:39:56,837 - INFO -  * Debugger PIN: 234-627-507
+2024-05-21 12:42:12,715 - INFO - Prediction request received
+2024-05-21 12:42:12,718 - INFO - Processing uploaded image
+2024-05-21 12:42:12,800 - INFO - Prediction successful
+2024-05-21 12:42:12,801 - INFO - 10.244.0.1 - - [21/May/2024 12:42:12] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:42:26,610 - INFO - Prediction request received
+2024-05-21 12:42:26,612 - INFO - Processing uploaded image
+2024-05-21 12:42:26,628 - INFO - Prediction successful
+2024-05-21 12:42:26,630 - INFO - 10.244.0.1 - - [21/May/2024 12:42:26] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:42:36,437 - INFO - Prediction request received
+2024-05-21 12:42:36,439 - ERROR - No selected file
+2024-05-21 12:42:36,439 - INFO - 10.244.0.1 - - [21/May/2024 12:42:36] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2024-05-21 12:43:23,717 - INFO - Prediction request received
+2024-05-21 12:43:23,718 - INFO - Processing uploaded image
+2024-05-21 12:43:23,733 - INFO - Prediction successful
+2024-05-21 12:43:23,734 - INFO - 10.244.0.1 - - [21/May/2024 12:43:23] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:43:31,726 - INFO - Prediction request received
+2024-05-21 12:43:31,728 - INFO - Processing uploaded image
+2024-05-21 12:43:31,748 - INFO - Prediction successful
+2024-05-21 12:43:31,749 - INFO - 10.244.0.1 - - [21/May/2024 12:43:31] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:45:31,108 - INFO - Prediction request received
+2024-05-21 12:45:31,110 - INFO - Processing uploaded image
+2024-05-21 12:45:31,130 - INFO - Prediction successful
+2024-05-21 12:45:31,130 - INFO - 10.244.0.1 - - [21/May/2024 12:45:31] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:45:37,308 - INFO - Prediction request received
+2024-05-21 12:45:37,310 - INFO - Processing uploaded image
+2024-05-21 12:45:37,323 - INFO - Prediction successful
+2024-05-21 12:45:37,324 - INFO - 10.244.0.1 - - [21/May/2024 12:45:37] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:45:43,712 - INFO - Prediction request received
+2024-05-21 12:45:43,713 - INFO - Processing uploaded image
+2024-05-21 12:45:43,727 - INFO - Prediction successful
+2024-05-21 12:45:43,728 - INFO - 10.244.0.1 - - [21/May/2024 12:45:43] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:46:02,140 - INFO - Prediction request received
+2024-05-21 12:46:02,144 - INFO - Processing uploaded image
+2024-05-21 12:46:02,161 - INFO - Prediction successful
+2024-05-21 12:46:02,162 - INFO - 10.244.0.1 - - [21/May/2024 12:46:02] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:46:17,911 - INFO - Prediction request received
+2024-05-21 12:46:17,938 - INFO - Processing uploaded image
+2024-05-21 12:46:18,051 - ERROR - Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 4, 224, 224] to have 3 channels, but got 4 channels instead
+2024-05-21 12:46:18,052 - INFO - 10.244.0.1 - - [21/May/2024 12:46:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-05-21 12:46:30,305 - INFO - Prediction request received
+2024-05-21 12:46:30,319 - INFO - Processing uploaded image
+2024-05-21 12:46:30,410 - ERROR - Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 4, 224, 224] to have 3 channels, but got 4 channels instead
+2024-05-21 12:46:30,412 - INFO - 10.244.0.1 - - [21/May/2024 12:46:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-05-21 12:46:37,887 - INFO - Prediction request received
+2024-05-21 12:46:37,889 - INFO - Processing uploaded image
+2024-05-21 12:46:37,910 - INFO - Prediction successful
+2024-05-21 12:46:37,910 - INFO - 10.244.0.1 - - [21/May/2024 12:46:37] "POST /predict HTTP/1.1" 200 -
+2024-05-21 12:46:56,314 - INFO - Prediction request received
+2024-05-21 12:46:56,317 - INFO - Processing uploaded image
+2024-05-21 12:46:56,342 - ERROR - Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 4, 224, 224] to have 3 channels, but got 4 channels instead
+2024-05-21 12:46:56,343 - INFO - 10.244.0.1 - - [21/May/2024 12:46:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-05-21 12:47:55,504 - INFO - Prediction request received
+2024-05-21 12:47:55,507 - INFO - Processing uploaded image
+2024-05-21 12:47:55,535 - ERROR - Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 4, 224, 224] to have 3 channels, but got 4 channels instead
+2024-05-21 12:47:55,536 - INFO - 10.244.0.1 - - [21/May/2024 12:47:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-05-21 12:58:03,583 - INFO - Prediction request received
+2024-05-21 12:58:03,587 - INFO - Processing uploaded image
+2024-05-21 12:58:03,614 - ERROR - Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 4, 224, 224] to have 3 channels, but got 4 channels instead
+2024-05-21 12:58:03,615 - INFO - 10.244.0.1 - - [21/May/2024 12:58:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
