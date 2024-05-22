@@ -20,7 +20,7 @@ pipeline {
             steps{
                 dir('./backend'){
                     sh 'pip install --no-cache-dir -r requirements.txt'
-                    sh 'pip install unittest flask_testing'
+                    sh 'pip install flask_testing'
                     sh 'pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu'
                     sh 'python3 test_app.py'
                 }
