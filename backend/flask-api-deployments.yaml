@@ -15,6 +15,9 @@ spec:
       containers:
         - name: flask
           image: rahulb2180/spe_major_project_backend:latest
+          env:
+          - name: MODEL_PATH
+            value: "/mnt/data/best_model.pth"
           ports:
             - containerPort: 5000
           volumeMounts:

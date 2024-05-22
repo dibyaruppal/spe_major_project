@@ -6,6 +6,7 @@ pipeline {
         FRONTEND_IMAGE_NAME = 'frontend'
         GITHUB_REPO_URL = 'https://github.com/rahulbollisetty/spe_major_project.git'
         PATH = ""
+        MODEL_PATH = "best_model.pth"
     }
     
     stages {
