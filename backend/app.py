@@ -6,6 +6,8 @@ import logging
 from kubernetes import client, config
 import threading
 from flask_cors import CORS
+from kubernetes.client.rest import ApiException
+import subprocess
 
 # Create flask app
 app = Flask(__name__)
@@ -25,40 +27,36 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-def trigger_training_job():
-    # Load kube config from default location
-    config.load_kube_config()
+def trigger_training_job(namespace, pod_name, container_name, command):
+    config.load_incluster_config()  # Load Kubernetes config for in-cluster access
 
-    # Create a Kubernetes API client
-    batch_v1 = client.BatchV1Api()
+    api_instance = client.CoreV1Api()
 
-    # Define the Job object
-    job_name = "train-job-template"
-    job = client.V1Job(
-        api_version="batch/v1",
-        kind="Job",
-        metadata=client.V1ObjectMeta(name=job_name)
-    )
+    try:
+        resp = api_instance.connect_get_namespaced_pod_exec(
+            name=pod_name,
+            namespace=namespace,
+            command=["/bin/sh", "-c", command],
+            container=container_name,
+            stderr=True,
+            stdin=False,
+            stdout=True,
+            tty=False,
+            _preload_content=False,
+        )
+        return resp.read_stream()
 
-    # Define the container spec
-    container = client.V1Container(
-        name="train",
-        image="rahulb2180/spe_major_project_model",
-        command=["python", "train.py"],
-        volume_mounts=[client.V1VolumeMount(mount_path="/mnt/data", name="model-storage")]
-    )
+    except ApiException as e:
+        return f"Exception when calling CoreV1Api->connect_get_namespaced_pod_exec: {e}\n"
 
-    # Define the pod template spec
-    template = client.V1PodTemplateSpec(
-        metadata=client.V1ObjectMeta(labels={"app": "train"}),
-        spec=client.V1PodSpec(restart_policy="Never", containers=[container]),
-    )
+def trigger_training_in_thread():
+    namespace = "default" 
+    pod_name = "train-pod"  
+    container_name = "train-container"  
+    command = "python train.py"  
 
-    job.spec = client.V1JobSpec(template=template, volumes=[client.V1Volume(name="model-storage", host_path=client.V1HostPathVolumeSource(path="/mnt/data"))])
-
-    # Create the Job in the Kubernetes cluster
-    batch_v1.create_namespaced_job(namespace="default", body=job)
-
+    result = trigger_training_job(namespace, pod_name, container_name, command)
+    print(result)
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -81,7 +79,7 @@ def predict():
             predicted_class_img = "Real Image" if predicted_labels == 1 else "AI Generated Image"
             logging.info('Prediction successful')
              # Trigger training in a separate thread to ensure non-blocking
-            training_thread = threading.Thread(target=trigger_training_job)
+            training_thread = threading.Thread(target=trigger_training_in_thread)
             training_thread.start()
             return jsonify({
                 'prediction_class': predicted_class_img,

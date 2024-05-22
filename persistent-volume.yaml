@@ -4,18 +4,21 @@ kind: PersistentVolume
 metadata:
   name: model-pv
 spec:
+  storageClassName: hostpath
   capacity:
     storage: 2Gi
   accessModes:
     - ReadWriteMany
   hostPath:
     path: "/mnt/data"
+  persistentVolumeReclaimPolicy: Retain
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc
+  name: model-pvc
 spec:
+  storageClassName: hostpath
   accessModes:
     - ReadWriteMany
   resources:

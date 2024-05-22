@@ -1,20 +1,25 @@
-apiVersion: batch/v1
-kind: Job
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: train-job-template
+  name: train-pod
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: train-pod
   template:
+    metadata:
+      labels:
+        app: train-pod
     spec:
       containers:
-      - name: train
-        image: rahulb2180/spe_major_project_model  
+      - name: train-container
+        image: rahulb2180/spe_major_project_model 
         command: ["python", "train.py"]
         volumeMounts:
-        - mountPath: "/mnt/data"
-          name: model-storage
-      restartPolicy: Never
+        - mountPath: /mnt/data
+          name: data-volume
       volumes:
-      - name: model-storage
-        hostPath:
-          path: "/mnt/data"
-          type: Directory
+      - name: data-volume
+        persistentVolumeClaim:
+            claimName: model-pvc

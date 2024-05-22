@@ -25,6 +25,5 @@ spec:
               name: model
       volumes:
         - name: model
-          hostPath:
-            path: "/mnt/data"
-            type: Directory
+          persistentVolumeClaim:
+            claimName: model-pvc
