@@ -22,12 +22,10 @@ pipeline {
                 MODEL_PATH = 'best_model.pth'
             }
             steps{
-                dir('./backend'){
                     sh 'pip install --no-cache-dir -r requirements.txt'
                     sh 'pip install flask_testing'
                     sh 'pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu'
-                    sh 'MODEL_PATH=$MODEL_PATH python3 test_app.py'
-                }
+                    sh 'MODEL_PATH=$MODEL_PATH python3 backend/test_app.py'
             }
         }
         
