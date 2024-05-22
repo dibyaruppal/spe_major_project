@@ -5,10 +5,11 @@ from PIL import Image
 import logging
 from kubernetes import client, config
 import threading
-import time
+from flask_cors import CORS
 
 # Create flask app
 app = Flask(__name__)
+CORS(app)
 
 # Configure logging to store logs in a file
 logging.basicConfig(filename='flask_app.log', level=logging.INFO,
@@ -87,6 +88,7 @@ def predict():
                 'predicted_probabilities': result["prob"].tolist()
             })
         except Exception as e:
+            print(e)
             logging.error(f'Error during prediction: {e}')
             return jsonify({'error': 'An error occurred during prediction. Please try again.'}), 500
     else:

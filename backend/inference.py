@@ -43,7 +43,10 @@ loaded_model.eval()
 
 def predictClass(image):
     # Load the image and preprocess it
-    # image_path = "ai_images_vs_real_image/test/RealArt/end.jpg"
+    # image_path = "ai_images_vs_real_image/test/RealArt/end.jpg"s
+    if image.mode == 'RGBA':
+        image = image.convert('RGB')
+        
     preprocess = transforms.Compose([
         transforms.Resize((image_height, image_width)),
         transforms.ToTensor(),
