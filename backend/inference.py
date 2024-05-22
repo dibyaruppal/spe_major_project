@@ -36,7 +36,7 @@ loaded_model = CustomCNN(num_classes)
 
 # Load the model's state dictionary and map it to CPU
 model_path = os.getenv('MODEL_PATH', '/mnt/data/best_model.pth')  # Default value
-loaded_model.load_state_dict(torch.load("/mnt/data/best_model.pth", map_location=torch.device('cpu')))
+loaded_model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
 # Set the model to evaluation mode
 loaded_model.eval()
