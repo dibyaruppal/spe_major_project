@@ -47,7 +47,7 @@ pipeline {
         stage('Push Docker Images') {
             steps {
                 script{
-                    docker.withRegistry('', 'LeagueFit-DockerHub') {
+                    docker.withRegistry('', 'Docker_hub_cred') {
                     sh ''' 
                         docker tag model rahulb2180/spe_major_project_model:latest
                         docker push rahulb2180/spe_major_project_model:latest
