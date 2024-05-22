@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Unit Testing'){
             environment {
-                MODEL_PATH = '/mnt/data/best_model.pth'
+                MODEL_PATH = 'best_model.pth'
             }
             steps{
                 dir('./backend'){
