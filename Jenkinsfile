@@ -34,7 +34,7 @@ pipeline {
         stage('Build Docker Images') {
             steps {
                 dir('./model') {
-                    sh "docker build -t ${DATASET_IMAGE_NAME} ."
+                    sh "docker build -t ${MODEL_IMAGE_NAME} ."
                 }
                 dir('./backend') {
                     sh "docker build -t ${BACKEND_IMAGE_NAME} ."
