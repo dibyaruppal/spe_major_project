@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: train-pod
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: train-pod
+  template:
+    metadata:
+      labels:
+        app: train-pod
+    spec:
+      containers:
+      - name: train-container
+        image: rahulb2180/spe_major_project_model 
+        command: ["python", "train.py"]
+        volumeMounts:
+        - mountPath: /mnt/data
+          name: data-volume
+      volumes:
+      - name: data-volume
+        persistentVolumeClaim:
+            claimName: model-pvc
