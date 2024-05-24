@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configure logging to store logs in a file
-handler = RotatingFileHandler('/mnt/data/log/flask.log', maxBytes=10000, backupCount=1)
+handler = RotatingFileHandler('flask.log', maxBytes=10000, backupCount=1)
 handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]')
 handler.setFormatter(formatter)
