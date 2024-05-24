@@ -2,26 +2,31 @@
 - name: Deploy kubernetes
   hosts: localhost
   gather_facts: False
+  remote_user: fledlucifer
+  become: true
   become_method: sudo
   become_user: root
-  become: true
   tasks:
-    
+    - name: Apply Persistent Volume and Claim
+      kubernetes.core.k8s:
+        kubeconfig: ~/.kube/config
+        state: present
+        definition: "{{ lookup('template', 'templates/persistent-volume.yaml.j2') }}"
 
     - name: Apply Flask API Deployment
       kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
+        kubeconfig: ~/.kube/config
         state: present
         definition: "{{ lookup('template', 'templates/flask-api-deployment.yaml.j2') }}"
 
     - name: Apply Frontend Deployment
       kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
+        kubeconfig: ~/.kube/config
         state: present
         definition: "{{ lookup('template', 'templates/frontend-deployment.yaml.j2') }}"
 
     - name: Apply Training Deployment
       kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
+        kubeconfig: ~/.kube/config
         state: present
         definition: "{{ lookup('template', 'templates/train-deployment.yaml.j2') }}"
