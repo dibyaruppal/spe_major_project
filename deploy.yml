@@ -2,6 +2,7 @@
 - name: Deploy kubernetes
   hosts: localhost
   gather_facts: False
+  become_method: sudo
   become_user: root
   become: true
   tasks:
