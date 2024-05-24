@@ -9,13 +9,14 @@ from flask_cors import CORS
 from kubernetes.client.rest import ApiException
 import subprocess
 from logging.handlers import RotatingFileHandler
-
+import os
 # Create flask app
 app = Flask(__name__)
 CORS(app)
 
 # Configure logging to store logs in a file
-handler = RotatingFileHandler('flask.log', maxBytes=10000, backupCount=1)
+log_path = os.getenv('LOG_PATH', '/mnt/data/log/flask.log')
+handler = RotatingFileHandler(log_path, maxBytes=10000, backupCount=1)
 handler.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]')
 handler.setFormatter(formatter)
@@ -25,6 +26,7 @@ app.logger.setLevel(logging.INFO)
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 # Define the dataset path
 DATASET_DIR = "/mnt/data/ai_images_vs_real_images"
+
 
 # Function to check if the uploaded file is an allowed image type
 def allowed_file(filename):
