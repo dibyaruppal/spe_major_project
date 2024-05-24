@@ -64,7 +64,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    ansible-playbook deploy.yml -vvv -i inventory --become --become-user=root --extra-vars "ansible_become_pass=2000"
+                    ansible-playbook deploy.yml -vvv -i inventory"
                     '''
                 }
             }

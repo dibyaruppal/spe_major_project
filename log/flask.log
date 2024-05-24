@@ -7,3 +7,42 @@ HTTP response headers: HTTPHeaderDict({'Audit-Id': 'a74548f9-bd0d-42c5-9fc0-c1aa
 HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \\"train-pod\\" is forbidden: User \\"system:serviceaccount:default:default\\" cannot get resource \\"pods/exec\\" in API group \\"\\" in the namespace \\"default\\"","reason":"Forbidden","details":{"name":"train-pod","kind":"pods"},"code":403}\n'
 
  [in /app/app.py:65]
+2024-05-24 17:14:30,972 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:14:30,974 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:14:30,995 INFO: Prediction successful [in /app/app.py:86]
+2024-05-24 17:14:31,004 INFO: Exception when calling CoreV1Api->connect_get_namespaced_pod_exec: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd750fb99-21c8-4a14-9c10-101399a4fc5c', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'Date': 'Fri, 24 May 2024 17:14:31 GMT', 'Content-Length': '319'})
+HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \\"train-pod\\" is forbidden: User \\"system:serviceaccount:default:default\\" cannot get resource \\"pods/exec\\" in API group \\"\\" in the namespace \\"default\\"","reason":"Forbidden","details":{"name":"train-pod","kind":"pods"},"code":403}\n'
+
+ [in /app/app.py:65]
+2024-05-24 17:16:11,133 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:11,135 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:11,148 INFO: Prediction successful [in /app/app.py:86]
+2024-05-24 17:16:11,158 INFO: Exception when calling CoreV1Api->connect_get_namespaced_pod_exec: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'fd6e531c-3453-4c5d-bc24-8fa6f9510aff', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'Date': 'Fri, 24 May 2024 17:16:11 GMT', 'Content-Length': '319'})
+HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \\"train-pod\\" is forbidden: User \\"system:serviceaccount:default:default\\" cannot get resource \\"pods/exec\\" in API group \\"\\" in the namespace \\"default\\"","reason":"Forbidden","details":{"name":"train-pod","kind":"pods"},"code":403}\n'
+
+ [in /app/app.py:65]
+2024-05-24 17:16:25,732 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:25,743 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:25,787 INFO: Prediction successful [in /app/app.py:86]
+2024-05-24 17:16:25,795 INFO: Exception when calling CoreV1Api->connect_get_namespaced_pod_exec: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '26e8f36a-6265-4bde-9eda-44c4c2c80c81', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'Date': 'Fri, 24 May 2024 17:16:25 GMT', 'Content-Length': '319'})
+HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \\"train-pod\\" is forbidden: User \\"system:serviceaccount:default:default\\" cannot get resource \\"pods/exec\\" in API group \\"\\" in the namespace \\"default\\"","reason":"Forbidden","details":{"name":"train-pod","kind":"pods"},"code":403}\n'
+
+ [in /app/app.py:65]
+2024-05-24 17:16:54,201 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:54,206 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:54,277 ERROR: Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 1, 224, 224] to have 3 channels, but got 1 channels instead [in /app/app.py:95]
+2024-05-24 17:16:55,966 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:55,972 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:56,003 ERROR: Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 1, 224, 224] to have 3 channels, but got 1 channels instead [in /app/app.py:95]
+2024-05-24 17:16:56,390 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:56,397 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:56,434 ERROR: Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 1, 224, 224] to have 3 channels, but got 1 channels instead [in /app/app.py:95]
+2024-05-24 17:16:56,696 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 17:16:56,706 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 17:16:56,792 ERROR: Error during prediction: Given groups=1, weight of size [16, 3, 3, 3], expected input[1, 1, 224, 224] to have 3 channels, but got 1 channels instead [in /app/app.py:95]
