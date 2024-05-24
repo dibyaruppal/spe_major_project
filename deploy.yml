@@ -1,5 +1,5 @@
 ---
-- name: Deploy Flask API and Training Job
+- name: Deploy kubernetes
   hosts: localhost
   gather_facts: False
   tasks:
