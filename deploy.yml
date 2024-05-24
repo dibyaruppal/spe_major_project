@@ -18,7 +18,7 @@
 
     - name: Apply Frontend Deployment
       kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
+        kubeconfig: /config
         state: present
         definition: "{{ lookup('template', 'templates/frontend-deployment.yaml.j2') }}"
 
