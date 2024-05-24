@@ -1,2 +1,3 @@
 127.0.0.1 ansible_connection=local ansible_user=rahul ansible_ssh_pass=rahul
 ansible_ssh_common_args = '-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
