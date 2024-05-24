@@ -24,6 +24,6 @@
 
     - name: Apply Training Deployment
       kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
+        kubeconfig: /config
         state: present
         definition: "{{ lookup('template', 'templates/train-deployment.yaml.j2') }}"
