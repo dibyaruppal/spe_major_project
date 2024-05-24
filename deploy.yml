@@ -6,11 +6,7 @@
   become_user: root
   become: true
   tasks:
-    - name: Apply Persistent Volume and Claim
-      kubernetes.core.k8s:
-        kubeconfig: /etc/ansible/config
-        state: present
-        definition: "{{ lookup('template', 'templates/persistent-volume.yaml.j2') }}"
+    
 
     - name: Apply Flask API Deployment
       kubernetes.core.k8s:

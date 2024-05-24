@@ -1,0 +1,9 @@
+2024-05-24 16:31:24,260 INFO: Prediction request received [in /app/app.py:69]
+2024-05-24 16:31:24,264 INFO: Processing uploaded image [in /app/app.py:81]
+2024-05-24 16:31:24,338 INFO: Prediction successful [in /app/app.py:86]
+2024-05-24 16:31:24,348 INFO: Exception when calling CoreV1Api->connect_get_namespaced_pod_exec: (403)
+Reason: Forbidden
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'a74548f9-bd0d-42c5-9fc0-c1aae57907b1', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Content-Type-Options': 'nosniff', 'Date': 'Fri, 24 May 2024 16:31:24 GMT', 'Content-Length': '319'})
+HTTP response body: b'{"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"pods \\"train-pod\\" is forbidden: User \\"system:serviceaccount:default:default\\" cannot get resource \\"pods/exec\\" in API group \\"\\" in the namespace \\"default\\"","reason":"Forbidden","details":{"name":"train-pod","kind":"pods"},"code":403}\n'
+
+ [in /app/app.py:65]
