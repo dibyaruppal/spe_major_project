@@ -6,6 +6,7 @@ pipeline {
         FRONTEND_IMAGE_NAME = 'frontend'
         GITHUB_REPO_URL = 'https://github.com/rahulbollisetty/spe_major_project.git'
         MODEL_PATH = "best_model.pth"
+        LOG_PATH = "flask.log"
     }
     
     stages {
@@ -25,7 +26,7 @@ pipeline {
                     sh 'pip install --no-cache-dir -r requirements.txt'
                     sh 'pip install flask_testing'
                     sh 'pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu'
-                    sh 'MODEL_PATH=$MODEL_PATH python3 test_app.py'
+                    sh 'MODEL_PATH=$MODEL_PATH LOG_PATH=$LOG_PATH python3 test_app.py'
                 }
             }
         }
@@ -63,7 +64,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    ansible-playbook deploy.yml -i inventory"
+                    ansible-playbook deploy.yml
                     '''
                 }
             }
