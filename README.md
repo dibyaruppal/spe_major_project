@@ -4,6 +4,11 @@
 
 This repository provides a comprehensive solution and  an advanced platform designed to accurately identify and differentiate whether an image is AI-generated or real. The project leverages deep learning techniques to analyze and classify images based on their origin, aiming to help users distinguish between synthetic and authentic images.
 
+## Architecture
+
+![diagram-export-5-25-2024-5_55_13-PM](https://github.com/dibyaruppal/spe_major_project/assets/51826858/d9b80173-8f79-43ca-9aab-de2f0993b80e)
+
+
 ## Features
 
 - **Pre-trained Models**: Utilize state-of-the-art pre-trained models for image classification.
